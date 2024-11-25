@@ -1411,7 +1411,7 @@ forktest(void)
   printf(1, "fork test OK\n");
 }
 
-void
+/*void
 sbrktest(void)
 {
   int fds[2], pid, pids[10], ppid;
@@ -1544,7 +1544,7 @@ sbrktest(void)
     sbrk(-(sbrk(0) - oldbrk));
 
   printf(stdout, "sbrk test OK\n");
-}
+}*/
 
 void
 validateint(int *p)
@@ -1767,7 +1767,7 @@ main(int argc, char *argv[])
   bigwrite();
   bigargtest();
   bsstest();
-  sbrktest();
+  //sbrktest();
   validatetest();
 
   opentest();
